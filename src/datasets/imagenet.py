@@ -6,7 +6,8 @@ import os
 import torch.utils.data as data
 from torchvision import transforms, datasets
 
-IMAGENET_DIR = None
+# IMAGENET_DIR = None
+IMAGENET_DIR = "/content/gdrive/MyDrive/imagenet"
 DIR_LIST = ['/data5/honglinc/Dataset/imagenet_raw',
             '/data5/chengxuz/Dataset/imagenet_raw',
             '/data5/chengxuz/imagenet_raw',
