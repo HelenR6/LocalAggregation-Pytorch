@@ -185,7 +185,7 @@ class BaseAgent(object):
         """
         Backs up the model upon interrupt
         """
-        self.summary_writer.export_scalars_to_json(os.path.join(self.config.summary_dir, "all_scalars.json".format()))
+#         self.summary_writer.export_scalars_to_json(os.path.join(self.config.summary_dir, "all_scalars.json".format()))
         self.summary_writer.close()
 
         self.logger.info("Backing up current version of model...")
@@ -195,7 +195,7 @@ class BaseAgent(object):
         """
         Do appropriate saving after model is finished training
         """
-        self.summary_writer.export_scalars_to_json(os.path.join(self.config.summary_dir, "all_scalars.json".format()))
+#         self.summary_writer.export_scalars_to_json(os.path.join(self.config.summary_dir, "all_scalars.json".format()))
         self.summary_writer.close()
 
         self.logger.info("Saving final versions of model...")
