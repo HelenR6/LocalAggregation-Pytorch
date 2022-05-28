@@ -128,7 +128,8 @@ class MemoryBank(object):
         self.dim = dim
         self.device = torch.device("cuda:{}".format(device_ids[0]))
         self._bank = self._create()
-        self.bank_broadcast = torch.cuda.comm.broadcast(self._bank, device_ids)
+#         self.bank_broadcast = torch.cuda.comm.broadcast(self._bank, device_ids)
+        self.bank_broadcast = self._bank.to(device_ids)
         self.device = [_bank.device for _bank in self.bank_broadcast]
         self.num_device = len(self.device)
         del self._bank
