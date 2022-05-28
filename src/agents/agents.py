@@ -9,7 +9,8 @@ import logging
 import numpy as np
 from tqdm import tqdm
 from itertools import product, chain
-from tensorboardX import SummaryWriter
+# from tensorboardX import SummaryWriter
+from torch.utils.tensorboard import SummaryWriter
 
 import torch
 import torch.nn as nn
