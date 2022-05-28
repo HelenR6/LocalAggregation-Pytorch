@@ -2,10 +2,12 @@
 # experiment = Experiment(api_key="l4wUtHmBfo1SqjrOHLsLtU0zN", project_name='general', workspace="honglin-chen")
 
 from copy import deepcopy
+import os,sys
+sys.path.append(os.getcwd()) 
 from src.agents.agents import *
 from src.utils.setup import process_config
 from src.utils.utils import load_json
-import os
+
 
 
 def run(config_path, pre_checkpoint_dir):
