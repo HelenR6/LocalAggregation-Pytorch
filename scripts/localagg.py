@@ -1,6 +1,8 @@
 import os
 import torch
 from copy import deepcopy
+import os,sys
+sys.path.append(os.getcwd())
 from src.agents.agents import *
 from src.utils.setup import process_config, _process_config
 from src.utils.utils import load_json
